@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace ByteBank.Funcionarios
 {
-    internal class Diretor
+    public class Diretor : Funcionario // colocando "Dois pontos(:)" estou dizendo que Diretor é um funcionario
     {
         //Classes 
-        public string Nome { get; set; }
-        public string CPF { get; set; }
-        public double Salario { get; set; }
 
         //Metodo retornavel 
         public double GetBonificacao()
