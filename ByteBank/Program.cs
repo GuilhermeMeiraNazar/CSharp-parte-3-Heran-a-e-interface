@@ -25,6 +25,10 @@ namespace ByteBank
             roberta.Salario = 5000;
             gerenciador.Registrar(roberta);
 
+            Funcionario RobertaTeste = roberta;
+            Console.WriteLine("Bonificação de uma referencia de direito " + roberta.GetBonificacao());
+            Console.WriteLine("Bonificação de uma referencia de direito " + RobertaTeste.GetBonificacao());
+
             Console.WriteLine(carlos.Nome);
             Console.WriteLine(carlos.GetBonificacao());
 

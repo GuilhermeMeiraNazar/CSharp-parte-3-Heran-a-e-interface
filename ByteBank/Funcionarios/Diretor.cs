@@ -11,7 +11,7 @@ namespace ByteBank.Funcionarios
         //Classes 
 
         //Metodo retornavel 
-        public double GetBonificacao()
+        public override double GetBonificacao() //GetBonificacao sendo rescrito pelo override 
         {
             return Salario;
         }

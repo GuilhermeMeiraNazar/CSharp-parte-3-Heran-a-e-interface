@@ -24,7 +24,7 @@ namespace ByteBank.Funcionarios
         //{
         //    _tipo = tipo;
         //}
-        public double GetBonificacao()
+        public virtual double GetBonificacao() //GetBonificacao principal com a palavra reservada virtual 
         {
            return Salario * 0.10;
         }
