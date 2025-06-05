@@ -13,7 +13,7 @@ namespace ByteBank.Funcionarios
         //Metodo retornavel 
         public override double GetBonificacao() //GetBonificacao sendo rescrito pelo override 
         {
-            return Salario;
+            return Salario + base.GetBonificacao();
         }
     }
 }
