@@ -8,6 +8,10 @@ namespace ByteBank.Funcionarios
 {
     public class Diretor : Funcionario // colocando "Dois pontos(:)" estou dizendo que Diretor é um funcionario
     {
+        public Diretor(string cpf) : base(cpf)
+        {
+        }
+
         //Classes 
 
         //Metodo retornavel 

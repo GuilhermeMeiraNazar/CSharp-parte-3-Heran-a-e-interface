@@ -8,6 +8,7 @@ namespace ByteBank.Funcionarios
 {
     public class Funcionario
     {
+        public static int TotalDeFuncionarios {  get; private set; }
         //Classe tipo
         // 0 - funcionario
         // 1 - diretor
@@ -16,8 +17,15 @@ namespace ByteBank.Funcionarios
 
         //Classes 
         public string Nome {  get; set; }
-        public string CPF { get; set; }
+        public string CPF { get; private set; }
         public double Salario { get; set; }
+
+        //Contrututor
+        public Funcionario(string cpf) 
+        { 
+            CPF = cpf;
+            TotalDeFuncionarios ++;
+        }
 
         //Metodo retornavel 
         //public Funcionario(int tipo)
