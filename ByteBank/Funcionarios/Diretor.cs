@@ -13,7 +13,7 @@ namespace ByteBank.Funcionarios
         //Metodo retornavel 
         public override double GetBonificacao() //GetBonificacao sendo rescrito pelo override 
         {
-            return Salario + base.GetBonificacao();
+            return Salario + base.GetBonificacao(); // estou usando base para referenciar o GetBonificacao base que esta dentro do funcionario, para que não fique em um loop de GetBonificacao chamando outro GetBonificacao
         }
     }
 }
