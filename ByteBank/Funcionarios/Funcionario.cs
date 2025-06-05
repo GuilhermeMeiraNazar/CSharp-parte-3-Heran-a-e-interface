@@ -18,13 +18,22 @@ namespace ByteBank.Funcionarios
         //Classes 
         public string Nome {  get; set; }
         public string CPF { get; private set; }
-        public double Salario { get; set; }
+        public double Salario { get; protected set; }
 
         //Contrututor
-        public Funcionario(string cpf) 
+        public Funcionario(double salario ,string cpf) 
         { 
             CPF = cpf;
+            Salario = salario;
+
             TotalDeFuncionarios ++;
+        }
+
+        public virtual void AumentarSalario()
+        {
+            //Salario = Salario + (Salario * 0.10);
+            //Salario = Salario *1.1;
+            Salario *= 1.1;
         }
 
         //Metodo retornavel 

@@ -8,7 +8,7 @@ namespace ByteBank.Funcionarios
 {
     public class Diretor : Funcionario // colocando "Dois pontos(:)" estou dizendo que Diretor é um funcionario
     {
-        public Diretor(string cpf) : base(cpf)
+        public Diretor(string cpf) : base(5000 ,cpf)
         {
         }
 
@@ -18,6 +18,10 @@ namespace ByteBank.Funcionarios
         public override double GetBonificacao() //GetBonificacao sendo rescrito pelo override 
         {
             return Salario + base.GetBonificacao(); // estou usando base para referenciar o GetBonificacao base que esta dentro do funcionario, para que não fique em um loop de GetBonificacao chamando outro GetBonificacao
+        }
+        public override void AumentarSalario()
+        {
+            Salario *= 1.15;
         }
     }
 }
